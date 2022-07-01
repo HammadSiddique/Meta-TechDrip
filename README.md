@@ -18,7 +18,7 @@
 
 ## Live Demo 🔗
 
-[Live Demo](https://cool-dusk-de1ef6.netlify.app/)
+[Live Demo](https://62bf59a22da6092d8116c262--nimble-donut-8a2d42.netlify.app/)
 
 ## Getting Started
 
@@ -31,14 +31,14 @@ To get a local copy up and running follow these simple steps.
 
 ### Setup
 
-Clone the repository using the GitHub [link](https://github.com/HammadSiddique/Space-Travellers-Hub.git)
+Clone the repository using the GitHub [link](https://github.com/HammadSiddique/Meta-TechDrip.git)
 
 ### Install
 
 In the terminal, go to your file directory and run this command.
 
 ```
-$ git clone https://github.com/HammadSiddique/Space-Travellers-Hub.git
+$ git clone https://github.com/HammadSiddique/Meta-TechDrip.git
 ```
 
 ### Usage
@@ -64,7 +64,7 @@ $ npm install
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/HammadSiddique/Space-Travellers-Hub/issues).
+Feel free to check the [issues page](https://github.com/HammadSiddique/Meta-TechDrip/issues).
 
 ## Show your support
 
@@ -72,8 +72,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Design idea [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 - Microverse
-- Code Reviewers
 
 ## 📝 License
 

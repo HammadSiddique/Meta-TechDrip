@@ -28,6 +28,12 @@ export const fetchProducts = () => async (dispatch) => {
   dispatch(getProducts(response.data));
 };
 
+export const fetchProductDetail = (id) => async (dispatch) => {
+  const response = await axios
+    .get(`https://fakestoreapi.com/products/${id}`);
+  dispatch(SelectedProduct(response.data));
+};
+
 export const productsReducer = (state = intialState, action) => {
   switch (action.type) {
     case GET_PRODUCTS:

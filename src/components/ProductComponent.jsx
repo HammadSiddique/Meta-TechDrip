@@ -25,7 +25,6 @@ const ProductComponent = () => {
               <h5 className="item-category">{category}</h5>
             </div>
           </div>
-
         </Link>
       </div>
     );

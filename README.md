@@ -15,10 +15,15 @@
 
 ## Website Mockup 📱 💻 🖥️
 
+![capstone 3](https://user-images.githubusercontent.com/67911212/176967762-76f52e49-fb18-4b0f-bbc6-78d95fce884c.jpg)
 
 ## Live Demo 🔗
 
 [Live Demo](https://62bf59a22da6092d8116c262--nimble-donut-8a2d42.netlify.app/)
+
+## Project Presentation
+
+[Video](loom.com)
 
 ## Getting Started
 

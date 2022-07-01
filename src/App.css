@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0%;
@@ -29,6 +30,12 @@ a {
   box-shadow: rgb(50 50 93 / 15%) 0 4px 6px -2px;
   background-color: var(--color-2);
   color: #fff;
+}
+
+.shop-name {
+  font-family: "Arima", cursive;
+  letter-spacing: 0.5px;
+  font-size: 1.6rem;
 }
 
 .back-btn {
@@ -96,19 +103,25 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50% 0;
+  margin: 10rem 0;
 }
 
 .custom-loader {
   width: 50px;
   height: 50px;
-  --c: radial-gradient(farthest-side, #ffffff 92%, #0000);
-  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+
+  --c: radial-gradient(farthest-side, #fff 92%, #0000);
+
+  background:
+    var(--c) 50% 0,
+    var(--c) 50% 100%,
+    var(--c) 100% 50%,
     var(--c) 0 50%;
   background-size: 12px 12px;
   background-repeat: no-repeat;
   animation: s7 1s infinite;
 }
+
 @keyframes s7 {
   to {
     transform: rotate(0.5turn);
@@ -155,4 +168,52 @@ a {
 
 .details-content .item-description {
   font-size: 0.8rem;
+  text-transform: none;
+  color: black;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    min-width: 100%;
+  }
+
+  .products-section {
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    padding: 7% 4%;
+  }
+
+  .item-card {
+    min-height: 390px;
+    max-width: 300px;
+  }
+
+  .item-image img {
+    width: 45%;
+  }
+
+  .item-name {
+    font-size: 1.1rem;
+  }
+
+  .item-price {
+    font-size: 1.7rem;
+  }
+
+  .item-category {
+    font-size: 0.7rem;
+  }
+
+  .product-detail-container {
+    min-height: 600px;
+    max-width: 700px;
+    margin: 3% auto;
+  }
+
+  .details-content .item-description {
+    font-size: 1rem;
+  }
 }

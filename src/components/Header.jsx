@@ -8,7 +8,7 @@ const Header = () => (
   <header>
     <nav className="navbar">
       <Link to="/"><i className="back-btn"><MdOutlineArrowBackIosNew /></i></Link>
-      <h2>Kick Drip</h2>
+      <h2 className="shop-name">Meta TechDrip</h2>
       <div>
         <i><FaMicrophone /></i>
         <i><AiOutlineSetting /></i>

@@ -6,7 +6,7 @@ const ProductComponent = () => {
   const products = useSelector((state) => state.allProducts.products);
   if (products.length === 0) {
     return (
-      <h4>NO DATA FOUND</h4>
+      <div className="loading-container-home"><div className="custom-loader" /></div>
     );
   }
   const renderList = products.map((product) => {

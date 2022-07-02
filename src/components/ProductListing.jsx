@@ -32,12 +32,13 @@ const ProductPage = () => {
         <form onSubmit={handleSearch}>
           <input
             type="text"
+            className="search-input"
             value={search}
             placeholder="Search Products"
             onChange={(e) => setSearch(e.target.value)}
           />
-          <button type="submit"><BsSearch /></button>
         </form>
+        <button className="search-btn" type="submit"><BsSearch /></button>
       </div>
       <div className="products-section">
         <ProductComponent />

@@ -23,7 +23,7 @@
 
 ## Project Presentation
 
-[Video](loom.com)
+[Video](https://www.loom.com/share/529c7cba4a414fe3be6e19d671a9ed48)
 
 ## Getting Started
 

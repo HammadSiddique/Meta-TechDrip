@@ -13,7 +13,6 @@ const ProductComponent = () => {
     const {
       id, title, image, price, category,
     } = product;
-    // console.log(product);
     return (
       <div className="product-item" key={id}>
         <Link to={`/product/${id}`}>

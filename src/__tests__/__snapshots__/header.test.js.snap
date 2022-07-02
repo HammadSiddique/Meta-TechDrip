@@ -36,8 +36,10 @@ exports[`renders correctly 1`] = `
         </svg>
       </i>
     </a>
-    <h2>
-      Kick Drip
+    <h2
+      className="shop-name"
+    >
+      Meta TechDrip
     </h2>
     <div>
       <i>

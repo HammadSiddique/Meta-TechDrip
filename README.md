@@ -19,7 +19,7 @@
 
 ## Live Demo 🔗
 
-[Live Demo](https://62bf59a22da6092d8116c262--nimble-donut-8a2d42.netlify.app/)
+[Live Demo](https://dev--nimble-donut-8a2d42.netlify.app/)
 
 ## Project Presentation
 

@@ -1,8 +1,9 @@
 import axios from 'axios';
 
-const GET_PRODUCTS = 'Kick-Drip/products/GET_PRODUCTS';
-const SELECTED_PRODUCTS = 'Kick-Drip/products/SELECTED_PRODUCTS';
-const REMOVE_SELECTED_PRODUCTS = 'Kick-Drip/products/REMOVE_SELECTED_PRODUCTS';
+const GET_PRODUCTS = 'Meta-TechDrip/products/GET_PRODUCTS';
+const SELECTED_PRODUCTS = 'Meta-TechDrip/products/SELECTED_PRODUCTS';
+const REMOVE_SELECTED_PRODUCTS = 'Meta-TechDrip/products/REMOVE_SELECTED_PRODUCTS';
+const FILTER = 'Meta-TechDrip/products/FILTER';
 
 export const getProducts = (products) => ({
   type: GET_PRODUCTS,
@@ -34,10 +35,19 @@ export const fetchProductDetail = (id) => async (dispatch) => {
   dispatch(SelectedProduct(response.data));
 };
 
+export const productFilter = (search) => ({ type: FILTER, payload: search });
+
 export const productsReducer = (state = intialState, action) => {
   switch (action.type) {
     case GET_PRODUCTS:
       return { ...state, products: action.payload };
+    case FILTER: {
+      const result = state.products.filter((product) => {
+        const title = product.title.toLowerCase();
+        return title.includes(action.payload.toLowerCase());
+      });
+      return { products: result };
+    }
     default:
       return state;
   }

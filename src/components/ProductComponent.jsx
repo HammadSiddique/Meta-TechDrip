@@ -4,10 +4,16 @@ import { useSelector } from 'react-redux';
 
 const ProductComponent = () => {
   const products = useSelector((state) => state.allProducts.products);
+  if (products.length === 0) {
+    return (
+      <h4>NO DATA FOUND</h4>
+    );
+  }
   const renderList = products.map((product) => {
     const {
       id, title, image, price, category,
     } = product;
+    // console.log(product);
     return (
       <div className="product-item" key={id}>
         <Link to={`/product/${id}`}>

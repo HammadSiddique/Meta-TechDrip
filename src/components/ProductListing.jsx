@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+/* eslint-disable jsx-a11y/control-has-associated-label */
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from '../redux/products/products';
+import { BsSearch } from 'react-icons/bs';
+import { fetchProducts, productFilter } from '../redux/products/products';
 import ProductComponent from './ProductComponent';
 
 const ProductPage = () => {
@@ -13,10 +15,34 @@ const ProductPage = () => {
     }
   }, []);
 
+  const [search, setSearch] = useState('');
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (search === '') {
+      dispatch(fetchProducts());
+    } else {
+      dispatch(productFilter(search));
+    }
+  };
+
   return (
-    <div className="products-section">
-      <ProductComponent />
-    </div>
+    <>
+      <div className="search-bar">
+        <form onSubmit={handleSearch}>
+          <input
+            type="text"
+            value={search}
+            placeholder="Search Products"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <button type="submit"><BsSearch /></button>
+        </form>
+      </div>
+      <div className="products-section">
+        <ProductComponent />
+      </div>
+    </>
   );
 };
 

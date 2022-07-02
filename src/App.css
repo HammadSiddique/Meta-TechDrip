@@ -147,7 +147,10 @@ a {
 
   --c: radial-gradient(farthest-side, #fff 92%, #0000);
 
-  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+  background:
+    var(--c) 50% 0,
+    var(--c) 50% 100%,
+    var(--c) 100% 50%,
     var(--c) 0 50%;
   background-size: 12px 12px;
   background-repeat: no-repeat;
